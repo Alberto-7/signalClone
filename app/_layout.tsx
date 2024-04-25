@@ -63,8 +63,19 @@ import React from "react";
 
 const StackLayout = () => {
   return (
-    <Stack>
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+    <Stack
+      initialRouteName="(screens)/LoginScreen"
+      screenOptions={{
+        headerStyle: { backgroundColor: "#2C6BED" },
+        headerTitleStyle: { color: "white" },
+        headerTintColor: "white",
+      }}
+    >
+      <Stack.Screen
+        name="(screens)/LoginScreen"
+        options={{ headerTitle: "Sign Up" }}
+      />
     </Stack>
   );
 };
+export default StackLayout;
