@@ -64,7 +64,7 @@ import React from "react";
 const StackLayout = () => {
   return (
     <Stack
-      initialRouteName="(screens)/LoginScreen"
+      //initialRouteName="(screens)/HomeScreen"
       screenOptions={{
         headerStyle: { backgroundColor: "#2C6BED" },
         headerTitleStyle: { color: "white" },
@@ -74,6 +74,11 @@ const StackLayout = () => {
       <Stack.Screen
         name="(screens)/LoginScreen"
         options={{ headerTitle: "Sign Up" }}
+      />
+      <Stack.Screen name="(screens)/RegisterScreen" />
+      <Stack.Screen
+        name="(screens)/HomeScreen"
+        options={{ headerBackVisible: false, headerTitle: "Home" }}
       />
     </Stack>
   );
